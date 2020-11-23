@@ -1,0 +1,10 @@
+<h1>Buscar Peliculas <small>VALOR BUSCADO: {{ textoBuscado }}</small></h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <h1 class="mt-5">Peliculas</h1>
+        <app-peliculas-poster-grid 
+            [movies]="movies"
+            *ngIf="movies.length > 0"></app-peliculas-poster-grid>
+    </div>
+</div>
